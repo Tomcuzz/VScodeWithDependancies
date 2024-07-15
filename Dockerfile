@@ -1,5 +1,5 @@
 FROM lscr.io/linuxserver/code-server:latest
 
-RUN echo "echo test >> /test.file" >> /etc/bash.bashrc
+RUN echo "sh /startup-script.sh" >> /etc/bash.bashrc
 
 ENTRYPOINT ["/init"]
