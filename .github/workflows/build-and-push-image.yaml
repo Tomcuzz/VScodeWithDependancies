@@ -26,4 +26,4 @@ jobs:
       
       - name: Run Buildx
         run: |
-          docker buildx build --platform linux/amd64,linux/arm64,linux/arm/v6,linux/arm/v7 -t tcousin/vs-code-with-deps:latest -t tcousin/vs-code-with-deps:$GITHUB_SHA --push . 
+          docker buildx build --platform linux/amd64,linux/arm64 -t tcousin/vs-code-with-deps:latest -t tcousin/vs-code-with-deps:$GITHUB_SHA --push . 
