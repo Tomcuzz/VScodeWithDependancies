@@ -7,6 +7,9 @@ RUN apt-get update
 RUN apt-get install ansible -y
 RUN apt-get install sshpass -y
 
+# Install vim
+RUN apt-get install vim -y
+
 RUN echo "sh /startup-script.sh" >> /etc/bash.bashrc
 
 ENTRYPOINT ["/init"]
